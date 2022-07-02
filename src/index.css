@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'chasm';
+        src: url(/dist/fonts/chasm/Chasm-Black.otf) format("opentype​");
+    }
+    @font-face {
+        font-family: 'bergen';
+        src: url(/dist/fonts/bergen/BergenText-Regular.otf) format("opentype");
+    }
+    @font-face {
+        font-family: 'ogg';
+        src: url(/dist/fonts/ogg/OggRegular.ttf) format("truetype");
+  }
+}
+
+body {
+    background-color: #fffef7;
+}
+
+h1, h2, h3 {
+    font-family: 'Ogg';
+}
+
+p {
+    font-family: 'Bergen';
+}
+
+.blur-backdrop-filter {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.custom-white {
+    color: #fffef7;
+}
